@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./genre.component.css']
 })
 export class GenreComponent {
-
+     images:any;
+          constructor(private service:GenreComponent){
+          
+          }
+          ngOnInit(){
+           this.service.onsubmit().subscribe(data=>this.images=data);
+          
+          }
 }

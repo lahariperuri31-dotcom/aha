@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./hiddengems.component.css']
 })
 export class HiddengemsComponent {
+        images:any;
+          constructor(private service:HiddengemsComponent){
+        
+          }
+          ngOnInit(){
+            this.service.onsubmit().subscribe(data=>this.images=data);
+        
+          }
 
 }

@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./heartbeatstories.component.css']
 })
 export class HeartbeatstoriesComponent {
-
+    images:any;
+          constructor(private service:HeartbeatstoriesComponent){
+        
+          }
+          ngOnInit(){
+            this.service.onsubmit().subscribe(data=>this.images=data);
+        
+          }
 }

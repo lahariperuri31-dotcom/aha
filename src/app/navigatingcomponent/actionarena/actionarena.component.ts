@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ActionarenaService } from '../service/actionarena.service';
 
 @Component({
   selector: 'app-actionarena',
@@ -6,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./actionarena.component.css']
 })
 export class ActionarenaComponent {
-
+    images:any;
+          constructor(private service:ActionarenaService){
+        
+          }
+          ngOnInit(){
+            this.service.onsubmit().subscribe(data=>this.images=data);
+        
+          }
 }

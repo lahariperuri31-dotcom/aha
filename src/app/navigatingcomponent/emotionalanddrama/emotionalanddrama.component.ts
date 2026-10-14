@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./emotionalanddrama.component.css']
 })
 export class EmotionalanddramaComponent {
+    images:any;
+          constructor(private service:EmotionalanddramaComponent){
+          
+            }
+            ngOnInit(){
+              this.service.onsubmit().subscribe(data=>this.images=data);
+          
+            }
 
 }
