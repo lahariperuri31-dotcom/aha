@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { Genre } from '../models/genre';
 
 @Injectable({
   providedIn: 'root'
@@ -8,7 +9,7 @@ import { Observable } from 'rxjs';
 export class GenreService {
        private baseurl="";
         constructor(private http:HttpClient) { }
-        onsubmit():Observable<GenreService[]>{
-          return this.http.get<GenreService[]>(this.baseurl);
+        onsubmit():Observable<Genre[]>{
+          return this.http.get<Genre[]>(this.baseurl);
         }
 }

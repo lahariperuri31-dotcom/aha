@@ -1,4 +1,4 @@
-export class Watchforfree {
+export class Emotionalanddrama {
     src!:String;
     alt!:String;
     bannersrc!:String;

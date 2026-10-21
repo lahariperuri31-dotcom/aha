@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { Handpickedforyou } from '../models/handpickedforyou';
 
 @Injectable({
   providedIn: 'root'
@@ -8,8 +9,8 @@ import { Observable } from 'rxjs';
 export class HandpickedforyouService {
    private baseurl="";
           constructor(private http:HttpClient) { }
-          onsubmit():Observable<HandpickedforyouService[]>{
-            return this.http.get<HandpickedforyouService[]>(this.baseurl);
+          onsubmit():Observable<Handpickedforyou[]>{
+            return this.http.get<Handpickedforyou[]>(this.baseurl);
           }
   
 }

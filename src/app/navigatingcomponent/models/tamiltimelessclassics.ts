@@ -1,4 +1,4 @@
-export class Watchforfree {
+export class Tamiltimelessclassics {
     src!:String;
     alt!:String;
     bannersrc!:String;

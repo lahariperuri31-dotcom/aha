@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { Trendingnow } from '../models/trendingnow';
 
 @Injectable({
   providedIn: 'root'
@@ -8,7 +9,7 @@ import { Observable } from 'rxjs';
 export class TrendingnowService {
   private baseurl="";
       constructor(private http:HttpClient) { }
-      onsubmit():Observable<TrendingnowService[]>{
-        return this.http.get<TrendingnowService[]>(this.baseurl);
+      onsubmit():Observable<Trendingnow[]>{
+        return this.http.get<Trendingnow[]>(this.baseurl);
       }
 }

@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { Emotionalanddrama } from '../models/emotionalanddrama';
 
 @Injectable({
   providedIn: 'root'
@@ -8,7 +9,7 @@ import { Observable } from 'rxjs';
 export class EmotionalanddramaService {
    private baseurl="";
     constructor(private http:HttpClient) { }
-    onsubmit():Observable<EmotionalanddramaService[]>{
-      return this.http.get<EmotionalanddramaService[]>(this.baseurl);
+    onsubmit():Observable<Emotionalanddrama[]>{
+      return this.http.get<Emotionalanddrama[]>(this.baseurl);
     }
 }

@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { Upcomingonaha } from '../models/upcomingonaha';
 
 @Injectable({
   providedIn: 'root'
@@ -8,7 +9,7 @@ import { Observable } from 'rxjs';
 export class UpcomingonahaService {
   private baseurl="";
         constructor(private http:HttpClient) { }
-        onsubmit():Observable<UpcomingonahaService[]>{
-          return this.http.get<UpcomingonahaService[]>(this.baseurl);
+        onsubmit():Observable<Upcomingonaha[]>{
+          return this.http.get<Upcomingonaha[]>(this.baseurl);
         }
 }

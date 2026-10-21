@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { Hiddengems } from '../models/hiddengems';
 
 @Injectable({
   providedIn: 'root'
@@ -8,7 +9,7 @@ import { Observable } from 'rxjs';
 export class HiddengemsService {
        private baseurl="";
               constructor(private http:HttpClient) { }
-              onsubmit():Observable<HiddengemsService[]>{
-                return this.http.get<HiddengemsService[]>(this.baseurl);
+              onsubmit():Observable<Hiddengems[]>{
+                return this.http.get<Hiddengems[]>(this.baseurl);
               }
 }

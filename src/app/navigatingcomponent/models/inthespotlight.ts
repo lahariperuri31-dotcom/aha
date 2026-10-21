@@ -1,4 +1,4 @@
-export class Watchforfree {
+export class Inthespotlight {
     src!:String;
     alt!:String;
     bannersrc!:String;

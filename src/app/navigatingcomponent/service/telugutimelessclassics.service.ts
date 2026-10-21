@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { Telugutimelessclassics } from '../models/telugutimelessclassics';
 
 @Injectable({
   providedIn: 'root'
@@ -8,7 +9,7 @@ import { Observable } from 'rxjs';
 export class TelugutimelessclassicsService {
    private baseurl="";
           constructor(private http:HttpClient) { }
-          onsubmit():Observable<TelugutimelessclassicsService[]>{
-            return this.http.get<TelugutimelessclassicsService[]>(this.baseurl);
+          onsubmit():Observable<Telugutimelessclassics[]>{
+            return this.http.get<Telugutimelessclassics[]>(this.baseurl);
           }
 }

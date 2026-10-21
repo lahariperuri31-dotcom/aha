@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { HiddengemsService } from '../service/hiddengems.service';
 
 @Component({
   selector: 'app-hiddengems',
@@ -7,7 +8,7 @@ import { Component } from '@angular/core';
 })
 export class HiddengemsComponent {
         images:any;
-          constructor(private service:HiddengemsComponent){
+          constructor(private service:HiddengemsService){
         
           }
           ngOnInit(){

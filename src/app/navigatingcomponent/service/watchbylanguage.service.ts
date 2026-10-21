@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { Watchbylanguage } from '../models/watchbylanguage';
 
 @Injectable({
   providedIn: 'root'
@@ -8,7 +9,7 @@ import { Observable } from 'rxjs';
 export class WatchbylanguageService {
    private baseurl="";
     constructor(private http:HttpClient) { }
-    onsubmit():Observable<WatchbylanguageService[]>{
-      return this.http.get<WatchbylanguageService[]>(this.baseurl);
+    onsubmit():Observable<Watchbylanguage[]>{
+      return this.http.get<Watchbylanguage[]>(this.baseurl);
     }
 }

@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { Actionarena } from '../models/actionarena';
 
 @Injectable({
   providedIn: 'root'
@@ -8,7 +9,7 @@ import { Observable } from 'rxjs';
 export class ActionarenaService {
    private baseurl="";
     constructor(private http:HttpClient) { }
-    onsubmit():Observable<ActionarenaService[]>{
-      return this.http.get<ActionarenaService[]>(this.baseurl);
+    onsubmit():Observable<Actionarena[]>{
+      return this.http.get<Actionarena[]>(this.baseurl);
     }
 }

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { HeartfeltdramaService } from '../service/heartfeltdrama.service';
 
 @Component({
   selector: 'app-heartfeltdrama',
@@ -7,7 +8,7 @@ import { Component } from '@angular/core';
 })
 export class HeartfeltdramaComponent {
       images:any;
-          constructor(private service:HeartfeltdramaComponent){
+          constructor(private service:HeartfeltdramaService){
         
           }
           ngOnInit(){

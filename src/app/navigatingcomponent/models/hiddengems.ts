@@ -1,4 +1,4 @@
-export class Watchforfree {
+export class Hiddengems {
     src!:String;
     alt!:String;
     bannersrc!:String;

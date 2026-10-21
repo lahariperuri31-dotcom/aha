@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { Inthespotlight } from '../models/inthespotlight';
 
 @Injectable({
   providedIn: 'root'
@@ -8,8 +9,8 @@ import { Observable } from 'rxjs';
 export class InthespotlightService {
   private baseurl="";
         constructor(private http:HttpClient) { }
-        onsubmit():Observable<InthespotlightService[]>{
-          return this.http.get<InthespotlightService[]>(this.baseurl);
+        onsubmit():Observable<Inthespotlight[]>{
+          return this.http.get<Inthespotlight[]>(this.baseurl);
         }
 
 }

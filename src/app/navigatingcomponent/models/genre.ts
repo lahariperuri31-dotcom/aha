@@ -1,4 +1,4 @@
-export class Watchforfree {
+export class Genre {
     src!:String;
     alt!:String;
     bannersrc!:String;

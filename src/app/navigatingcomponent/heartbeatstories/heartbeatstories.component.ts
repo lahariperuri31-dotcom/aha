@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { HeartbeatstoriesService } from '../service/heartbeatstories.service';
 
 @Component({
   selector: 'app-heartbeatstories',
@@ -7,7 +8,7 @@ import { Component } from '@angular/core';
 })
 export class HeartbeatstoriesComponent {
     images:any;
-          constructor(private service:HeartbeatstoriesComponent){
+          constructor(private service:HeartbeatstoriesService){
         
           }
           ngOnInit(){

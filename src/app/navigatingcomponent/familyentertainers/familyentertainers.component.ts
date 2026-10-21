@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FamilyentertainersService } from '../service/familyentertainers.service';
 
 @Component({
   selector: 'app-familyentertainers',
@@ -7,11 +8,8 @@ import { Component } from '@angular/core';
 })
 export class FamilyentertainersComponent {
    images:any;
-          constructor(private service:FamilyentertainersComponent){
-          
-          }
+          constructor(private service:FamilyentertainersService){}
           ngOnInit(){
            this.service.onsubmit().subscribe(data=>this.images=data);
-          
           }
 }

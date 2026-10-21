@@ -1,4 +1,4 @@
-export class Watchforfree {
+export class Trendingnow {
     src!:String;
     alt!:String;
     bannersrc!:String;

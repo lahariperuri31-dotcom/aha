@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Genre } from '../models/genre';
+import { GenreService } from '../service/genre.service';
 
 @Component({
   selector: 'app-genre',
@@ -7,7 +9,7 @@ import { Component } from '@angular/core';
 })
 export class GenreComponent {
      images:any;
-          constructor(private service:GenreComponent){
+          constructor(private service:GenreService){
           
           }
           ngOnInit(){
