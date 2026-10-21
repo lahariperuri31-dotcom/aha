@@ -8,9 +8,7 @@ import { MostwatchedintamilService } from '../service/mostwatchedintamil.service
 })
 export class MostwatchedintamilComponent {
       images:any;
-        constructor(private service:MostwatchedintamilService){
-      
-        }
+        constructor(private service:MostwatchedintamilService){}
         ngOnInit(){
           this.service.onsubmit().subscribe(data=>this.images=data);
       

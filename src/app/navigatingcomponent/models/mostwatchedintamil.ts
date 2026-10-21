@@ -1,15 +1,16 @@
 export class Mostwatchedintamil {
-    src!:String;
-    alt!:String;
-    bannersrc!:String;
-    banneralt!:String;
-    titlesrc!:String;
-    titlealt!:String
-    year!:number;
-    timing!:String;
-    category!:String;
-    title!:String;
-    general!:String;
-    summary!:String;
+    templatesrc!:string;
+    templatealt!:string;
+    bannersrc!:string;
+    banneralt!:string;
+    logosrc!:string;
+    logoalt!:string;
+    showtype!:string;
+    showdate!:string;
+    cateogary!:string;
+    language!:string;
+    movietitle!:string;
+    genre!:string;
+    summary!:string;
 }
 
