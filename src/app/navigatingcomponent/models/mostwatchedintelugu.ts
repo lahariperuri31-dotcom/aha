@@ -1,5 +1,5 @@
 export class Mostwatchedintelugu {
-   templatesrc!:string;
+    templatesrc!:string;
     templatealt!:string;
     bannersrc!:string;
     banneralt!:string;
